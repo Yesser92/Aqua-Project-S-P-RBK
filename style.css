@@ -1,0 +1,33 @@
+:root{
+    
+    --black: black;
+    --bleu: aqua;
+    --text-shadow: .1rem .1rem .3rem #333;
+    --box-shadow: .1rem .1rem .3rem #333;
+
+
+
+
+}
+*{
+    margin: 0;padding: 0;
+    box-sizing:border-box;
+    text-transform: uppercase;
+    font-family: 'Exo',sans-serif;
+    transition: all .2s linear;
+
+}
+html{
+    font-size: 62.5%;
+}
+ body{
+    background-color: #333;
+
+}
+header{
+    width: 100%;
+    display: flex;
+
+}
+
+
