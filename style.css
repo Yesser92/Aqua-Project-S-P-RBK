@@ -87,7 +87,32 @@ header .fa-bars{
     display: none;
 
 }
+.container{
+    height: 100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 
+}
+.container.content{
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+.container.content h1{
+    font-size: 9rem;
+    color:var(--bleu) ;
+}
+.container.content h2{
+    font-size: 7rem;
+    color:#fff;
+}
+.container.content button{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    height: ;
+}
 
 
 
