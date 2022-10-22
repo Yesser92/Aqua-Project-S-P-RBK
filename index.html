@@ -1,79 +1,109 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="C:\Users\khammessi\Desktop\solo project\style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
     <title>Aqua web </title>
     <script src="https://kit.fontawesome.com/b4aa146494.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
+
+
 <body>
-   <header>
-<a href="#" class="logo"><h1>Logo</h1></a>
-<nav  class="navbar">
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">about</a></li>
-        <li><a href="">contact</a></li>
-        <li><a href="">blogs</a></li>
-        <li><a href="">Login</a></li>
+    <header>
+        <a href="#" class="logo">
+            <h1>Logo</h1>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">blogs</a></li>
+                <li><a href="">Login</a></li>
 
 
 
-    </ul>
-</nav>
-<div class="fa fas fa-bars"></div>
+            </ul>
+        </nav>
+
+        <div class="fa fas fa-bars"></div>
+    </header>
 
 
+    <div class="container">
+        <p></p>
+        <div class="content">
+            <h1>underwater</h1>
+            <h2>adventure</h2>
+            <a href="#"><button>join now</button></a>
+            <div class="icons">
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-instagram"></a>
 
 
+            </div>
+        </div>
+        <div class="video-container">
+            <video src="v1.mp4" autoplay muted loop class="vid1"></video>
+            <video src="v4.mp4" autoplay muted loop  class="vid4"></video>
+            <video src="v2.mp4" autoplay muted loop  class="vid2"></video>
 
-</header> 
-
-
-<div class="container">
-    <div class="content"></div>
-    <h1>Underwater</h1>
-    <h2>Adventure</h2>
-    <a href="#"><button>Join now</button></a>
-    <div class="icons">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagrame"></a>
+        </div>
     </div>
 
-</div>
 
 
 
 
 
-<script>
-    /*$(document).ready(function(){
-        $('.fa-bars').click(function(){
-        $(this).toggleClass('fa-times');
-       
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('.fa-bars').click(function () {
+                $(this).toggleClass('fa-times');
+                $('.navbar').toggleClass('nav-toggle')
+
+
+                $('.navbar').click(function () {
+                    $(this).removeClass('nav-toggle');
+                    $('.fa-bars').removeClass('fa-times')
+                });
+            });
         });
-        
-    });*/
-    $(document).ready(function(){
-        $('.fa-bars').click(function(){
-            $(this).toggleClass('fa-times');
-           $('.navbar').toggleClass('nav-toggle')
 
-           
-        $('.navbar').click(function(){
-            $(this).removeClass('nav-toggle');
-           $('.fa-bars').removeClass('fa-times')
-});
-});
-    });
-</script>
+    </script>
+
+
 </body>
+
 </html>
