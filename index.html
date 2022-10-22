@@ -15,13 +15,18 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
     <title>Aqua web </title>
     <script src="https://kit.fontawesome.com/b4aa146494.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+  src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+  integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
 </head>
 
 
@@ -64,31 +69,22 @@
         </div>
         <div class="video-container">
             <video src="v1.mp4" autoplay muted loop class="vid1"></video>
-            <video src="v4.mp4" autoplay muted loop  class="vid4"></video>
-            <video src="v2.mp4" autoplay muted loop  class="vid2"></video>
+            <video src="v4.mp4" autoplay muted loop class="vid2"></video>
+            <video src="v2.mp4" autoplay muted loop class="vid3"></video>
 
         </div>
+        <div class="controls">
+            <p></p>
+            <div class="dots dot1"></div>
+            <div class="dots dot2"></div>
+            <div class="dots dot3"></div>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script>
 
         $(document).ready(function () {
+            
             $('.fa-bars').click(function () {
                 $(this).toggleClass('fa-times');
                 $('.navbar').toggleClass('nav-toggle')
@@ -98,6 +94,27 @@
                     $(this).removeClass('nav-toggle');
                     $('.fa-bars').removeClass('fa-times')
                 });
+            });
+            
+            $('.dot1').click(function(){
+                $('vid1').css('display','block');
+                $('vid2').css('display','none');
+                $('vid3').css('display','none');
+
+            });
+            
+            $('.dot2').click(function(){
+                $('vid1').css('display','none');
+                $('vid2').css('display','block');
+                $('vid3').css('display','none');
+
+            });
+            
+            $('.dot3').click(function(){
+                $('vid1').css('display','none');
+                $('vid2').css('display','none');
+                $('vid3').css('display','block');
+
             });
         });
 

@@ -174,20 +174,59 @@ header .fa-bars {
 
 }
 .container .video-container video{
-    height: 100%;
-    width: 100%;
+    
     object-fit: cover;
     position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
+     animation: vid .5s alternate;
+     display: none;
+}
+.container .video-container .vid1{
+
+    display: block;
 
 }
+.controls{
+    position: absolute;
+    bottom: 15%;left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+.controls .dots{
+    height: 1.5rem;
+    width: 4.5rem ;
+    background: #fff;
+    margin: 0 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    cursor: pointer;
+
+}
+.controls .dots:hover{
+    background: var(--black);
+}
+@keyframes vid{
+    0%{
+        transform: scale(3.5) skew(-45deg) rotate(45deg);
+    }
+
+}
+
+/*.container.controls .dots{
+    height: 1.5rem;
+    width: 4.5rem ;
+    background: #fff;
+    margin: 0 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    cursor: pointer;
+
+}*/
 
 
 
