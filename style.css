@@ -15,7 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: uppercase;
-    font-family: 'Exo-BlackItalic';
+    font-family: 'Exo';
     transition: all .2s linear;
 
 }
@@ -89,7 +89,7 @@ header .fa-bars {
 }
 
 
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -101,25 +101,27 @@ header .fa-bars {
 
 }
 
-.container .content{
+.container .content {
     text-align: center;
     text-shadow: var(--text-shadow);
 
 
-}   
+}
+
 .container .content h1 {
     font-size: 7rem;
     color: var(--bleu);
 
-    
+
 }
 
-.container .content h2{
+.container .content h2 {
     font-size: 7rem;
     color: #fff;
 
 }
-.container .content button{
+
+.container .content button {
     outline: none;
     border: none;
     border-radius: 1rem;
@@ -131,15 +133,19 @@ header .fa-bars {
     color: #fff;
     box-shadow: var(--box-shadow);
     margin-bottom: 10px;
+    margin: top 1rem; ;
 }
-.container .content button:hover{
+
+.container .content button:hover {
     background: var(--black);
     letter-spacing: .2rem;
 }
-.container .content icons{
+
+.container .content icons {
     margin-top: 3rem;
 }
-.container .content .icons a{
+
+.container .content .icons a {
     font-size: 1.7rem;
     height: 4rem;
     width: 4rem;
@@ -154,16 +160,18 @@ header .fa-bars {
     margin: 0 .5rem;
 
 }
-.container .content .icons a:hover{
+
+.container .content .icons a:hover {
     background: var(--black);
     color: #fff;
 }
 
 
 
-.container .video-container{
+.container .video-container {
     position: absolute;
-    top:0;left: 0;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
     height: 100%;
@@ -173,33 +181,38 @@ header .fa-bars {
 
 
 }
-.container .video-container video{
-    
+
+.container .video-container video {
+
     object-fit: cover;
     position: fixed;
     top: 50%;
     left: 50%;
-    
+
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-     animation: vid .5s alternate;
-     display: none;
+    animation: vid .5s alternate;
+    display: none;
 }
-.container .video-container .vid1{
+
+.container .video-container .vid1 {
 
     display: block;
 
 }
-.controls{
+
+.container .controls {
     position: absolute;
-    bottom: 15%;left: 50%;
+    bottom: 15%;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
 
 }
-.controls .dots{
+
+.container .controls .dots {
     height: 1.5rem;
-    width: 4.5rem ;
+    width: 4.5rem;
     background: #fff;
     margin: 0 1rem;
     box-shadow: var(--box-shadow);
@@ -207,26 +220,18 @@ header .fa-bars {
     cursor: pointer;
 
 }
-.controls .dots:hover{
+
+.container .controls .dots:hover {
     background: var(--black);
+
 }
-@keyframes vid{
-    0%{
+
+@keyframes vid {
+    0% {
         transform: scale(3.5) skew(-45deg) rotate(45deg);
     }
 
 }
-
-/*.container.controls .dots{
-    height: 1.5rem;
-    width: 4.5rem ;
-    background: #fff;
-    margin: 0 1rem;
-    box-shadow: var(--box-shadow);
-    border-radius: 5rem;
-    cursor: pointer;
-
-}*/
 
 
 
@@ -249,7 +254,7 @@ header .fa-bars {
         left: -120%;
         height: 100vh;
         width: 100vw;
-        background: rgab(0, 0, 0, .8);
+        background: rgba(0, 0, 0, .8);
         z-index: 100;
 
 
@@ -274,5 +279,15 @@ header .fa-bars {
 
     header .nav-toggle {
         left: 0;
+    }
+}
+@media (max-width: 550px) {
+    .container .content h1{
+        font-size: 5rem;
+
+    }
+    .container .content h2{
+        font-size: 4rem;
+        
     }
 }
